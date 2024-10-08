@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.helloworldjfxtemplate.controller.Reports">
+   <children>
+      <Button fx:id="menuButton" layoutX="959.0" layoutY="549.0" mnemonicParsing="false" onAction="#onMenu" text="Back to Menu">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="apptTypeTable" layoutX="108.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="apptType" prefWidth="97.0" text="Apt_Type" />
+          <TableColumn fx:id="appTypeTotal" prefWidth="102.0" text="Apt_Total" />
+        </columns>
+      </TableView>
+      <TableView fx:id="apptMonthTable" layoutX="396.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="apptMonth" prefWidth="100.0" text="Month" />
+          <TableColumn fx:id="apptMonthTotal" prefWidth="99.0" text="Total" />
+        </columns>
+      </TableView>
+      <TableView fx:id="contactTable" layoutX="108.0" layoutY="358.0" prefHeight="200.0" prefWidth="789.0" AnchorPane.rightAnchor="203.0" AnchorPane.topAnchor="358.0">
+        <columns>
+          <TableColumn fx:id="aptId" prefWidth="55.0" text="Id" />
+          <TableColumn fx:id="aptTitle" prefWidth="95.0" text="Title" />
+            <TableColumn fx:id="aptType" prefWidth="103.0" text="Type" />
+            <TableColumn fx:id="aptDescription" prefWidth="182.0" text="Description" />
+            <TableColumn fx:id="aptStart" prefWidth="138.0" text="Start" />
+            <TableColumn fx:id="aptEnd" prefWidth="137.0" text="End" />
+            <TableColumn fx:id="aptCustId" prefWidth="78.0" text="Cust_Id" />
+        </columns>
+      </TableView>
+      <TableView fx:id="customerTable" layoutX="697.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="custName" prefWidth="122.0" text="Customer Name" />
+          <TableColumn fx:id="custTotal" prefWidth="77.0" text="Total" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="contactBox" layoutX="770.0" layoutY="324.0" prefHeight="25.0" prefWidth="127.0" promptText="Contact" />
+      <Label layoutX="108.0" layoutY="87.0" text="Appointments by type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="89.0" text="Appointments by month">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="91.0" text="Appointments by customer ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="22.0" text="Reports">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="328.0" text="Appointments by contact">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
